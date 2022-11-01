@@ -36,6 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.2.13
+  lottie: ^1.4.3
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +54,11 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
+
+flutter_native_splash:
+  color: "#9ae79a"
+  image: assets/images/splash_screen/logo.png
+
 flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -62,6 +69,10 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/fonts/google_fonts/
+    - assets/images/splash_screen/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -74,6 +85,15 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/google_fonts/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/google_fonts/Montserrat-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/google_fonts/Montserrat-Bold.ttf
+          weight: 600
   # fonts:
   #   - family: Schyler
   #     fonts:
@@ -85,6 +105,6 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
